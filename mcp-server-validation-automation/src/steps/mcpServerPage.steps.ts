@@ -127,7 +127,7 @@ When(/^User navigates back to MCP server list$/, async () => {
 });
 
 When(/^User goes back to MCP server list$/, async () => {
-    await browser.url(`${process.env.OBOT_URL}/admin/mcp-servers`);
+    await browser.url(`${process.env.BOEING_URL}/admin/mcp-servers`);
 });
 
 Then(/^MCP server "([^"]*)" should be disconnected successfully$/, async (serverName: string) => {

@@ -6,7 +6,7 @@ import SoftAssert from "../core/softAssert";
 import { context } from "../utils/context";
 import { Key } from "webdriverio";
 
-Given(/^User navigates the Obot login page$/, async() => {
+Given(/^User navigates the Boeing login page$/, async() => {
 	const url = process.env.baseURL ; // Fallback URL if not defined
 	await browser.url(url);
 });
@@ -52,12 +52,12 @@ Then('ui: Press Escape Key', async () => {
   });
 
 
-When(/^User navigates the Obot-Admin login page$/, async() => {
+When(/^User navigates the Boeing-Admin login page$/, async() => {
 	const url = process.env.adminURL ; 
 	await browser.url(url);
 });
 
-Then(/^User selects Okta to sign in Obot-Admin$/, async() => {
+Then(/^User selects Okta to sign in Boeing-Admin$/, async() => {
 	await clickToElement(Selectors.admin.oktaLogin)
 });
 

@@ -18,10 +18,10 @@ description: |
 
   **No Setup Required**: Authentication is handled automatically through OAuth2 workflow.
 
-  **Important for Admins**: To enable OAuth with Obot, your Atlassian admin must add the Obot callback URL domain:
+  **Important for Admins**: To enable OAuth with Boeing, your Atlassian admin must add the Boeing callback URL domain:
   1. Go to [Atlassian Administration](https://admin.atlassian.com) and select your organization
   2. Navigate to **Apps > AI settings > Rovo MCP server**
-  3. Add your Obot domain (e.g., `https://your-obot-domain/**`)
+  3. Add your Boeing domain (e.g., `https://your-boeing-domain/**`)
 
   ## Example Usage
 

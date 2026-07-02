@@ -1,10 +1,10 @@
-Feature: Manage <ServerName> MCP Server configuration on Obot
+Feature: Manage <ServerName> MCP Server configuration on Boeing
 
-    Background: Navigate to Obot
+    Background: Navigate to Boeing
         Given I setup context for assertion
-        When User navigates to the Obot main login page
+        When User navigates to the Boeing main login page
 
-    Scenario: Update config, rename, verify details and disconnect MCP server "<ServerName>" on Obot
+    Scenario: Update config, rename, verify details and disconnect MCP server "<ServerName>" on Boeing
         When User searches for MCP server "<ConnectionName>"
         And User performs "Connect To Server" action on MCP server "<ConnectionName>"
         And User connects to the "<ConnectionName>" MCP server
@@ -25,7 +25,7 @@ Feature: Manage <ServerName> MCP Server configuration on Obot
         When User navigates back to MCP server list
         
         And User performs "Chat" action on MCP server "<ConnectionName>"
-        And User sends prompts to Obot AI chat for "<PromptName>" MCP server
+        And User sends prompts to Boeing AI chat for "<PromptName>" MCP server
         Then All prompt results should be validated and a report generated for the selected "<ReportName>" MCP server
 
         When User goes back to MCP server list

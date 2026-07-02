@@ -31,7 +31,7 @@ env:
     required: true
     sensitive: true
     description: The connection string for your MongoDB database.
-  # - key: MDB_MCP_READ_ONLY ## TODO: need dynamic args support, see issue https://github.com/obot-platform/obot/issues/3619 feature request 1
+  # - key: MDB_MCP_READ_ONLY ## TODO: need dynamic args support, see issue https://github.com/boeing-ai-gateway/boeing/issues/3619 feature request 1
   #   name: MongoDB Read Only
   #   required: false
   #   sensitive: false
@@ -173,7 +173,7 @@ toolPreview:
 
 runtime: containerized
 containerizedConfig:
-  image: ghcr.io/obot-platform/mcp-images/mongodb-database:1.9.0
+  image: ghcr.io/boeing-ai-gateway/mcp-images/mongodb-database:1.9.0
   port: 8099
   path: /
   args:

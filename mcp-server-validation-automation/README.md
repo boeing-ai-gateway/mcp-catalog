@@ -1,6 +1,6 @@
 
 # WebdriverIO Automation Project
-This project uses **WebdriverIO** and **JavaScript** to automate the testing of **Obot.ai**, an AI-driven chatbot platform. The automation suite includes tests for logging into the platform, creating and editing AI agents, managing tasks, and using tools like file uploads, task management, and message handling.
+This project uses **WebdriverIO** and **JavaScript** to automate the testing of **Boeing.ai**, an AI-driven chatbot platform. The automation suite includes tests for logging into the platform, creating and editing AI agents, managing tasks, and using tools like file uploads, task management, and message handling.
 
 ## Table of Contents
 - [Prerequisites](#prerequisites)
@@ -48,7 +48,7 @@ Once you've installed the dependencies and set up your environment, you can run 
    After the tests are executed, you can review the results in the console or check the generated Allure reports if they are configured.
 
 ## Usage
-This test suite is designed to work with WebDriverIO and Cucumber for behavior-driven testing. The tests validate user interactions with the Obot.ai platform, such as logging in, creating AI agents, managing tasks, and using different tools integrated into the platform.
+This test suite is designed to work with WebDriverIO and Cucumber for behavior-driven testing. The tests validate user interactions with the Boeing.ai platform, such as logging in, creating AI agents, managing tasks, and using different tools integrated into the platform.
 
 ## Contributing
 

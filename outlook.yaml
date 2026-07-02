@@ -26,10 +26,10 @@ metadata:
   categories: Business
   allow-multiple: "true"
 icon: https://img.icons8.com/?size=100&id=ut6gQeo5pNqf&format=png&color=000000
-repoURL: https://github.com/obot-platform/microsoft-office-365-mcp/tree/main/outlook
+repoURL: https://github.com/boeing-ai-gateway/microsoft-office-365-mcp/tree/main/outlook
 runtime: remote
 remoteConfig:
-  fixedURL: https://outlook-mcp.obot.ai/mcp
+  fixedURL: https://outlook-mcp.boeing.ai/mcp
 toolPreview:
   - name: list_mail_folders
     description: Lists all available Outlook mail folders.

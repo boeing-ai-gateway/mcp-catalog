@@ -49,6 +49,6 @@ toolPreview:
       page: Page number to retrieve (starting from 1). Each page contains 30 results.
       query: The search query to find relevant code files
   - name: fetch_generic_url_content
-    description: Generic tool to fetch content from any absolute URL, respecting robots.txt rules. Use this to retrieve referenced urls (absolute urls) that were mentioned in previously fetched documentation.
+    description: Generic tool to fetch content from any absolute URL, respecting rboeings.txt rules. Use this to retrieve referenced urls (absolute urls) that were mentioned in previously fetched documentation.
     params:
       url: The URL of the document or page to fetch

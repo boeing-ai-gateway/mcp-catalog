@@ -15,18 +15,18 @@ import path from "path";
 import { promises as fs } from "fs";
 import { generateProjectName } from "../utils/projectName.model";
 
-Given(/^User navigates to the Obot main login page$/, async () => {
-  const url = process.env.OBOT_URL;
+Given(/^User navigates to the Boeing main login page$/, async () => {
+  const url = process.env.BOEING_URL;
   await browser.url(url);
 });
 
-Then(/^User opens chat Obot$/, async () => {
+Then(/^User opens chat Boeing$/, async () => {
   await browser.pause(MEDIUM_PAUSE);
-  if(await $(Selectors.MCP.adminNavigation.welcomeToObotTitle).isDisplayed()) {
+  if(await $(Selectors.MCP.adminNavigation.welcomeToBoeingTitle).isDisplayed()) {
     await clickToElement(Selectors.MCP.popupContinueButton);
   }
   await clickToElement(Selectors.MCP.navigationbtn);
-  await clickToElement(Selectors.MCP.clickChatObot);
+  await clickToElement(Selectors.MCP.clickChatBoeing);
 });
 
 When(/^User opens the MCP connector page$/, async () => {
@@ -61,14 +61,14 @@ Then(/^User selects "([^"]*)" button$/, async (Button) => {
   }
 });
 
-Then(/^User asks obot "([^"]*)"$/, async (prompt) => {
-  await slowInputFilling(Selectors.MCP.obotInput, prompt);
+Then(/^User asks boeing "([^"]*)"$/, async (prompt) => {
+  await slowInputFilling(Selectors.MCP.boeingInput, prompt);
   await clickToElement(Selectors.MCP.submitPrompt);
   await browser.pause(LONG_PAUSE);
 });
 
 When(
-  /^User sends prompts to Obot AI chat for "([^"]*)" MCP server$/,
+  /^User sends prompts to Boeing AI chat for "([^"]*)" MCP server$/,
   { timeout: 15 * 60 * 1000 },
   async function (serverName: string) {
     const jsonPath = path.resolve(
@@ -162,7 +162,7 @@ Then(/^User connects to the "(.*)" MCP server$/, async (mcpServer: string) => {
 
     case "chroma cloud":
       await slowInputFilling(Selectors.MCP.chromaCloud.tenentID, process.env.CHROMA_TENENT_ID);
-      await slowInputFilling(Selectors.MCP.chromaCloud.DBName, process.env.CHROMA_DB_NAME || "obot-test");
+      await slowInputFilling(Selectors.MCP.chromaCloud.DBName, process.env.CHROMA_DB_NAME || "boeing-test");
       await slowInputFilling(Selectors.MCP.chromaCloud.APIKey, process.env.CHROMA_API_KEY);
       break;
 

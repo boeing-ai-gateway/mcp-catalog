@@ -23,7 +23,7 @@ description: '![Tavily Crawl Beta](https://raw.githubusercontent.com/tavily-ai/t
 
   - **Website Mapping**: Create structured maps of website architecture to understand organization and discover pages
 
-  - **Domain Crawling**: Systematically explore websites with smart crawling strategies that respect robots.txt and handle dynamic content
+  - **Domain Crawling**: Systematically explore websites with smart crawling strategies that respect rboeings.txt and handle dynamic content
 
   - **Multiple Output Formats**: Support for summaries, Markdown, or cleaned text extraction
 

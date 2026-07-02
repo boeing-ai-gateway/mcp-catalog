@@ -1,10 +1,10 @@
-Feature: Add Composite <ServerName> MCP Server on Obot
+Feature: Add Composite <ServerName> MCP Server on Boeing
 
-    Background: Navigate to Obot
+    Background: Navigate to Boeing
         Given I setup context for assertion
-        When User navigates to the Obot main login page
+        When User navigates to the Boeing main login page
 
-    Scenario Outline: Add composite MCP server "<ConnectionName>" on Obot
+    Scenario Outline: Add composite MCP server "<ConnectionName>" on Boeing
         When User clicks on "Add MCP Server" button
         And User selects "Composite Server" option from select server type modal
         And User enters "<ConnectionName>" in MCP server name field
@@ -23,7 +23,7 @@ Feature: Add Composite <ServerName> MCP Server on Obot
         When User navigates back to MCP server list
 
         And User performs "Chat" action on MCP server "<ConnectionName>"
-        And User sends prompts to Obot AI chat for "<PromptName>" MCP server
+        And User sends prompts to Boeing AI chat for "<PromptName>" MCP server
         Then All prompt results should be validated and a report generated for the selected "<ReportName>" MCP server
 
         Examples:

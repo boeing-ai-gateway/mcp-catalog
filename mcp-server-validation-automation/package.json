@@ -1,5 +1,5 @@
 {
-  "name": "Obot Acceptance Tests",
+  "name": "Boeing Acceptance Tests",
   "version": "1.0.0",
   "description": "WebDriverIO - Cucumber and Webdriverio automation test suite",
   "scripts": {

@@ -131,7 +131,7 @@ description: |
 
 metadata:
   categories: Databases,Data & Analytics
-repoURL: https://github.com/obot-platform/bigquery-mcp
+repoURL: https://github.com/boeing-ai-gateway/bigquery-mcp
 icon: https://www.svgrepo.com/show/375551/bigquery.svg
 env:
   - key: GOOGLE_CLOUD_PROJECT
@@ -158,7 +158,7 @@ env:
     file: true
 runtime: containerized
 containerizedConfig:
-  image: ghcr.io/obot-platform/bigquery-mcp:latest
+  image: ghcr.io/boeing-ai-gateway/bigquery-mcp:latest
   port: 5000
   path: /mcp
 toolPreview:

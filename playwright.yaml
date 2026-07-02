@@ -113,7 +113,7 @@ toolPreview:
   description: Returns all console messages (Read-only -  true)
 runtime: containerized
 containerizedConfig:
-  image: ghcr.io/obot-platform/mcp-images/playwright:0.0.70
+  image: ghcr.io/boeing-ai-gateway/mcp-images/playwright:0.0.70
   port: 8099
   path: /
   args:

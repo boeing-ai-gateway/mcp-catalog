@@ -13,10 +13,10 @@ export async function sendPromptAndWaitForReply(promptText: string) {
   }
 
   // Focus input and send message
-  const input = await element(Selectors.MCP.obotInput);
+  const input = await element(Selectors.MCP.boeingInput);
   await input.waitForDisplayed({ timeout: ELEMENT_TIMEOUT });
-  await clickToElement(Selectors.MCP.obotInput);
-  await $(Selectors.MCP.obotInput).setValue(promptText);
+  await clickToElement(Selectors.MCP.boeingInput);
+  await $(Selectors.MCP.boeingInput).setValue(promptText);
   await clickToElement(Selectors.MCP.submitPrompt);
 
   // Wait for a new reply to appear

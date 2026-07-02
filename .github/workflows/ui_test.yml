@@ -43,21 +43,21 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Run OBOT container
+      - name: Run BOEING container
         run: |
-          docker run -d --name obot \
+          docker run -d --name boeing \
             -p 8080:8080 \
             -v /var/run/docker.sock:/var/run/docker.sock \
             -e OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }} \
-            -e OBOT_SERVER_DISABLE_UPDATE_CHECK=true \
-            ghcr.io/obot-platform/obot:latest
+            -e BOEING_SERVER_DISABLE_UPDATE_CHECK=true \
+            ghcr.io/boeing-ai-gateway/boeing:latest
 
-      - name: Wait for OBOT to be ready
+      - name: Wait for BOEING to be ready
         run: |
-          echo "Waiting for OBOT container..."
+          echo "Waiting for BOEING container..."
           for i in {1..12}; do
             if curl -sf http://localhost:8080/api/me | grep -q '"username":"nobody"'; then
-              echo "OBOT API is ready."
+              echo "BOEING API is ready."
               break
             fi
             echo "Not ready yet... retry #$i"
@@ -120,21 +120,21 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Run OBOT container
+      - name: Run BOEING container
         run: |
-          docker run -d --name obot \
+          docker run -d --name boeing \
             -p 8080:8080 \
             -v /var/run/docker.sock:/var/run/docker.sock \
             -e OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }} \
-            -e OBOT_SERVER_DISABLE_UPDATE_CHECK=true \
-            ghcr.io/obot-platform/obot:latest
+            -e BOEING_SERVER_DISABLE_UPDATE_CHECK=true \
+            ghcr.io/boeing-ai-gateway/boeing:latest
 
-      - name: Wait for OBOT to be ready
+      - name: Wait for BOEING to be ready
         run: |
-          echo "Waiting for OBOT container..."
+          echo "Waiting for BOEING container..."
           for i in {1..12}; do
             if curl -sf http://localhost:8080/api/me | grep -q '"username":"nobody"'; then
-              echo "OBOT API is ready."
+              echo "BOEING API is ready."
               break
             fi
             echo "Not ready yet... retry #$i"
@@ -197,21 +197,21 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Run OBOT container
+      - name: Run BOEING container
         run: |
-          docker run -d --name obot \
+          docker run -d --name boeing \
             -p 8080:8080 \
             -v /var/run/docker.sock:/var/run/docker.sock \
             -e OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }} \
-            -e OBOT_SERVER_DISABLE_UPDATE_CHECK=true \
-            ghcr.io/obot-platform/obot:latest
+            -e BOEING_SERVER_DISABLE_UPDATE_CHECK=true \
+            ghcr.io/boeing-ai-gateway/boeing:latest
 
-      - name: Wait for OBOT to be ready
+      - name: Wait for BOEING to be ready
         run: |
-          echo "Waiting for OBOT container..."
+          echo "Waiting for BOEING container..."
           for i in {1..12}; do
             if curl -sf http://localhost:8080/api/me | grep -q '"username":"nobody"'; then
-              echo "OBOT API is ready."
+              echo "BOEING API is ready."
               break
             fi
             echo "Not ready yet... retry #$i"

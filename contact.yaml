@@ -25,10 +25,10 @@ metadata:
   categories: Business
   allow-multiple: "true"
 icon: https://img.icons8.com/?size=100&id=GmYe21I1IHOY&format=png&color=000000
-repoURL: https://github.com/obot-platform/microsoft-office-365-mcp/tree/main/contact
+repoURL: https://github.com/boeing-ai-gateway/microsoft-office-365-mcp/tree/main/contact
 runtime: remote
 remoteConfig:
-  fixedURL: https://m365-contact-mcp.obot.ai/mcp
+  fixedURL: https://m365-contact-mcp.boeing.ai/mcp
 toolPreview:
   - name: list_contacts
     description: List all Outlook contacts available to the user.

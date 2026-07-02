@@ -73,7 +73,7 @@ env:
   description: AWS Region
 runtime: containerized
 containerizedConfig:
-  image: ghcr.io/obot-platform/mcp-images/aws-eks:0.1.27
+  image: ghcr.io/boeing-ai-gateway/mcp-images/aws-eks:0.1.27
   port: 8099
   path: /
   args:

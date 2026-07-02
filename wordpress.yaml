@@ -19,7 +19,7 @@ description: |
 metadata:
   categories: Blogging, SaaS & API Integrations
 icon: https://img.icons8.com/?size=100&id=13664&format=png&color=000000
-repoURL: https://github.com/obot-platform/wordpress-mcp-server
+repoURL: https://github.com/boeing-ai-gateway/wordpress-mcp-server
 
 toolPreview:
 - name: create_category
@@ -240,6 +240,6 @@ env:
   sensitive: true
 runtime: containerized
 containerizedConfig:
-  image: ghcr.io/obot-platform/wordpress-mcp-server:main
+  image: ghcr.io/boeing-ai-gateway/wordpress-mcp-server:main
   port: 8099
   path: "/"

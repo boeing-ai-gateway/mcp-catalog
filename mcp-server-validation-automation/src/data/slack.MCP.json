@@ -2,7 +2,7 @@
   "prompts": [
     "List all channels in the Slack workspace. Returns the name and ID for each channel.",
     "List all users in the Slack workspace.",
-    "Search for channels in the Slack workspace matching the query 'obot'.",
+    "Search for channels in the Slack workspace matching the query 'boeing'.",
     "Search for users in the Slack workspace matching the query 'craig'.",
     "Send the following message to the user(s) with ID(s) U08G0EUUDUM: 'Test message'.",
     "Get information about the currently logged-in user."

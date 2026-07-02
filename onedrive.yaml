@@ -24,10 +24,10 @@ metadata:
   categories: Business
   allow-multiple: "true"
 icon: https://img.icons8.com/?size=100&id=13638&format=png&color=000000
-repoURL: https://github.com/obot-platform/microsoft-office-365-mcp/tree/main/onedrive
+repoURL: https://github.com/boeing-ai-gateway/microsoft-office-365-mcp/tree/main/onedrive
 runtime: remote
 remoteConfig:
-  fixedURL: https://m365-onedrive-mcp.obot.ai/mcp
+  fixedURL: https://m365-onedrive-mcp.boeing.ai/mcp
 toolPreview:
   - name: list_all_drives
     description: Lists all available OneDrive drives for a user, including personal and shared organization drives.

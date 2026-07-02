@@ -1,17 +1,17 @@
-Feature: Connect MCP servers on Obot
+Feature: Connect MCP servers on Boeing
 
-    Background: Navigate to Obot
+    Background: Navigate to Boeing
         Given I setup context for assertion
-        When User navigates to the Obot main login page
-        Then User opens chat Obot
+        When User navigates to the Boeing main login page
+        Then User opens chat Boeing
         And User creates a new Project with no existing connections
 
-    Scenario Outline: Validate <ServerName> MCP Server sequential prompts on Obot
+    Scenario Outline: Validate <ServerName> MCP Server sequential prompts on Boeing
         When User opens the MCP connector page
         And User selects "<ServerName>" MCP server
         And User selects "Connect To Server" button
         And User connects to the "<ConnectionName>" MCP server
-        When User sends prompts to Obot AI chat for "<PromptName>" MCP server
+        When User sends prompts to Boeing AI chat for "<PromptName>" MCP server
         Then All prompt results should be validated and a report generated for the selected "<ReportName>" MCP server
 
         Examples:

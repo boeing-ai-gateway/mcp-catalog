@@ -1,10 +1,10 @@
-Feature: Manage <ServerName> MCP Server deployments and connections on Obot
+Feature: Manage <ServerName> MCP Server deployments and connections on Boeing
 
-  Background: Navigate to Obot
+  Background: Navigate to Boeing
     Given I setup context for assertion
-    When User navigates to the Obot main login page
+    When User navigates to the Boeing main login page
 
-  Scenario: Connect, restart and delete MCP server "<ServerName>" on Obot
+  Scenario: Connect, restart and delete MCP server "<ServerName>" on Boeing
     When User searches for MCP server "<ConnectionName>"
     And User performs "Connect To Server" action on MCP server "<ConnectionName>"
     And User connects to the "<ConnectionName>" MCP server
