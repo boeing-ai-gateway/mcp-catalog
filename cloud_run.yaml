@@ -86,6 +86,6 @@ env:
 
 runtime: containerized
 containerizedConfig:
-  image: ghcr.io/boeing-ai-gateway/mcp-images/googlecloudrun:main
+  image: ghcr.io/obot-platform/mcp-images/googlecloudrun:main
   port: 3000
   path: "/mcp"

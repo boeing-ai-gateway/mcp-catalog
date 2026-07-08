@@ -358,7 +358,7 @@ env:
   required: true
   sensitive: false
 - name: Grafana Service Account Token
-  key: GRAFANA_SERVICE_ACCOUNT_TOKEN
+  key: GRAFANA_API_TOKEN
   description: (Recommended) Your Grafana service account token for API authentication. Generate from Administration > Service Accounts in Grafana. Requires appropriate permissions for intended operations.
   required: false
   sensitive: true
@@ -377,17 +377,17 @@ env:
   required: false
   sensitive: false
   description: (Optional) Your Grafana organization ID for multi-org support.
+- key: GRAFANA_NO_PROXY
+  name: Bypass Proxy
+  required: false
+  sensitive: false
+  description: Set to true to bypass HTTP proxy for Grafana connections (needed on Boeing network).
 
 
 runtime: containerized
 containerizedConfig:
   image: ghcr.io/boeing-ai-gateway/mcp-images/grafana:latest
-  port: 8080
+  port: 8001
   path: "/mcp"
-  args:
-  - -t
-  - streamable-http
-  - --address
-  - 0.0.0.0:8080
 
 

@@ -79,7 +79,7 @@ toolPreview:
     query: "The question or task you need help with. Be specific and include relevant details. Good: 'How to set up authentication with JWT in Express.js' or 'React useEffect cleanup function examples'. Bad: 'auth' or 'hooks'. IMPORTANT: Do not include any sensitive or confidential information such as API keys, passwords, credentials, or personal data in your query."
 runtime: containerized
 containerizedConfig:
-  image: ghcr.io/boeing-ai-gateway/mcp-images/context7:2.1.7
+  image: ghcr.io/obot-platform/mcp-images/context7:2.1.7
   port: 8099
   path: /
   args:

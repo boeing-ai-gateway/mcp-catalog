@@ -37,7 +37,7 @@ env:
   description: Your Dynatrace environment URL
 runtime: containerized
 containerizedConfig:
-  image: ghcr.io/boeing-ai-gateway/mcp-images/dynatrace:1.7.6
+  image: ghcr.io/obot-platform/mcp-images/dynatrace:1.7.6
   port: 8099
   path: /
   args:

@@ -87,7 +87,7 @@ toolPreview:
   description: Performs comprehensive health checks including cache hit rates, connections, indexes, and vacuum status
 runtime: containerized
 containerizedConfig:
-  image: ghcr.io/boeing-ai-gateway/mcp-images/postgresql:0.3.0
+  image: ghcr.io/obot-platform/mcp-images/postgresql:0.3.0
   port: 8099
   path: /
   args:

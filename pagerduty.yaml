@@ -240,7 +240,7 @@ env:
 
 runtime: containerized
 containerizedConfig:
-  image: ghcr.io/boeing-ai-gateway/mcp-images/pagerduty:0.17.0
+  image: ghcr.io/obot-platform/mcp-images/pagerduty:0.17.0
   port: 8099
   path: /
   args:

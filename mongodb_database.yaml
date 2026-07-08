@@ -173,7 +173,7 @@ toolPreview:
 
 runtime: containerized
 containerizedConfig:
-  image: ghcr.io/boeing-ai-gateway/mcp-images/mongodb-database:1.9.0
+  image: ghcr.io/obot-platform/mcp-images/mongodb-database:1.9.0
   port: 8099
   path: /
   args:
