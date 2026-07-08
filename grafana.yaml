@@ -357,10 +357,11 @@ env:
   description: The URL of your Grafana instance (e.g., https://your-org.grafana.net for Grafana Cloud, or your self-hosted instance URL)
   required: true
   sensitive: false
+  value: "https://grafana.global.bsf.tools"
 - name: Grafana Service Account Token
   key: GRAFANA_API_TOKEN
-  description: (Recommended) Your Grafana service account token for API authentication. Generate from Administration > Service Accounts in Grafana. Requires appropriate permissions for intended operations.
-  required: false
+  description: (Recommended) Cross-project Grafana service account token for API authentication. Generate from Administration > Service Accounts in Grafana.
+  required: true
   sensitive: true
 - key: GRAFANA_USERNAME
   name: Grafana Username
@@ -381,6 +382,7 @@ env:
   name: Bypass Proxy
   required: false
   sensitive: false
+  value: "true"
   description: Set to true to bypass HTTP proxy for Grafana connections (needed on Boeing network).
 
 
